@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300&display=swap');
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+body  {
+    width: 100vw;
+    height: 100vh;
+}
+.nav-login {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #8B4513 ;
+}
+.links-login {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    color: #4b2d0a;
+    font-size: 1.3em;
+}
+.links-login:hover {
+    background-color: #70360c;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+
+#main-login {
+    background-color: #8B4513 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login-image {
+    width: 35vw;
+
+}
+.left-login > h1 {
+    color: #ffffff;
+    font-size: 3vw;
+}
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-login > h1 {
+    color: #3b1a01;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:  #df7d229d;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+}
+
+.textfield {
+    color: #3b1a01;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#CDB79E;
+    color: #3b1a01;
+    font-size: 12pt;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label {
+    color: #3b1a01;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.textfield > input::placeholder {
+    color: #3b1a01;
+    
+}
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+    background: #8B795E;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.548);
+    
+}
+.btn-login > a {
+    text-decoration: none;
+    color: #3b1a01;
+}
+.btn-login:hover {
+    box-shadow: 5px 5px 5px #9b460691 ;
+}
+.btn-login:active {
+    transform: translateY(4px);
+    
+}
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    #main-login {
+       flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image {
+        width: 50vw;
+    }
+    .card-login {
+        width: 90%;
+    }
+
+}
