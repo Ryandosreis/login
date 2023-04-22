@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +9,18 @@
     <title>Tela de login</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">RY7</a>
-        <input type="checkbox" id="toggler">
-        <label for="toggler"><i class="material-symbols-outlined">menu</i></label>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        <header class="header">
+            <div class="logo">Menu</div>
+            <i class="material-symbols-outlined" id="toggler">
+                menu  </i>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </header>
         <div id="main-login">
         <div class="left-login">
             <h1>Seja bem-vindo <br> faça login para nos conhecer </h1>
@@ -41,5 +41,13 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggle = document.querySelector('.toggler');
+        const navbar = document.querySelector('.navbar');
+
+        toggle.addEventListener('click', () => {
+            nav.classlist.toggle('show-nav');
+        });
+    </script>
 </body>
 </html>
