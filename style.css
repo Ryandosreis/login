@@ -158,24 +158,7 @@ body  {
     transform: translateY(4px);
     
 }
-@media screen and (max-width: 600px) {
-   .material-symbols-outlined {
-    display: block;
-    font-size: 2em;
-   }
-   .nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
 
-   }
-   .nav li {
-    margin:  10px 0px;
-   }
-   .show-nav {
-    display: flex;
-   }
-}
 @media only screen and (max-width: 950px) {
     .card-login {
         width: 85%;
@@ -203,5 +186,25 @@ body  {
     .card-login {
         width: 90%;
     }
+    header {
+        width: 100%;
+        height: 10%;
+    }
+    .material-symbols-outlined {
+        display: block;
+        font-size: 2em;
+       }
+       .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    
+       }
+       .nav li {
+        margin:  10px 0px;
+       }
+       .show-nav {
+        display: flex;
+       }
 
 }
