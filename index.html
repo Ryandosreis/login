@@ -11,10 +11,10 @@
 <body>
         <header class="header">
             <div class="logo">Menu</div>
-            <i class="material-symbols-outlined" id="toggler">
+            <i class="material-symbols-outlined" id="toggler" onclick="cickMenu()">
                 menu  </i>
-            <nav class="nav">
-                <ul>
+            <nav class="nav" id="itens">
+                <ul >
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -41,13 +41,8 @@
             </div>
         </div>
     </div>
-    <script>
-        const toggle = document.querySelector('.toggler');
-        const navbar = document.querySelector('.navbar');
-
-        toggle.addEventListener('click', () => {
-            nav.classlist.toggle('show-nav');
-        });
+    <script src="login.js">
+        
     </script>
 </body>
 </html>

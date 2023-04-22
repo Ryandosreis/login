@@ -11,6 +11,8 @@ body  {
 }
 
 .header {
+    width: 100%;
+    height: 10%;
     background-color: #924c17;
     color: antiquewhite;
     display: flex;
@@ -24,9 +26,7 @@ body  {
    font-family: bold;
    text-transform: uppercase;
 }
-.material-symbols-outlined{
-    display: none;
-}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -174,11 +174,12 @@ body  {
     }
     .left-login {
         width: 100%;
-        height: 50vh;
+        height: calc(100% - 10%);
     }
     .right-login {
         width: 100%;
-        height: 50vh;
+        height: calc(100% - 10%);
+        margin-top: 20px;
     }
     .left-login-image {
         width: 50vw;
@@ -190,7 +191,7 @@ body  {
         width: 100%;
         height: 10%;
     }
-    .material-symbols-outlined {
+    #toggler {
         display: block;
         font-size: 2em;
        }
@@ -201,10 +202,13 @@ body  {
     
        }
        .nav li {
-        margin:  10px 0px;
+        margin:  0px 30px;
        }
        .show-nav {
         display: flex;
+       }
+       .open {
+            display: none;
        }
 
 }
