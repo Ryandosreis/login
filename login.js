@@ -1,8 +1,7 @@
-function clickMenu (){
-    let  menuMobile = document.querySelector('.material-symbols-outlined')
-    if (menuMobile.classList.contains('open')) {
-    menuMobile.classList.remove('open')
+function clickMenu () {
+    if(itens.style.display == 'block') {
+        itens.style.display = 'none'
     } else {
-       menuMobile.classList.add('open')
+        itens.style.display = 'block'
     }
 }
