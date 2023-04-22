@@ -191,11 +191,11 @@ body  {
     }
     .left-login {
         width: 100%;
-        height: 100vh;
+        height: 50vh;
     }
     .right-login {
         width: 100%;
-        height: 100vh;
+        height: 500vh;
     }
     .left-login-image {
         width: 50vw;
